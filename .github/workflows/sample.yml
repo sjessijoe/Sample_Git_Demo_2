@@ -22,6 +22,6 @@ jobs:
     - name: Docker Build
       run: docker build -t github-actions-demo .
     - name: Docker Tag
-      run: docker tag github-actions-demo neeharikarn9/github-actions-demo
+      run: docker tag github-actions-demo jnirmal1/github-actions-demo
     - name: Docker Push
-      run: docker push neeharikarn9/github-actions-demo
+      run: docker push jnirmal1/github-actions-demo
