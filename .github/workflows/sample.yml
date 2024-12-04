@@ -19,7 +19,7 @@ jobs:
       with:
        username: ${{vars.DOCKERHUBUSERNAME}}
        password: ${{secrets.DOCKERHUBPASSWORD}}
-    - name: Docker Pull
+    - name: Docker Build
       run: docker build -t github-actions-demo .
     - name: Docker Tag
       run: docker tag github-actions-demo neeharikarn9/github-actions-demo
